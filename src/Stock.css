@@ -1,0 +1,117 @@
+.stock {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #2b4e68ba,
+    rgba(255, 255, 255, 0.52)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stock__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 10rem 0;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #447ba5;
+  color: white;
+  padding: 0 2rem;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  height: 3rem;
+  text-shadow: 0px 1px 0px black;
+}
+
+.button:hover {
+  background-color: #589fd6;
+  transform: scale(1.1);
+  transform: translateY(-2px);
+}
+
+.button:active,
+.button.active {
+  background-color: #589fd6;
+  transform: scale(1.1);
+  transform: translateY(2px);
+}
+
+.title {
+  color: white;
+  margin: 3rem;
+  font-size: 3rem;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 1.6rem;
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.description ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.description p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  width: 100%;
+}
+.button-description {
+  height: 3rem;
+  font-style: italic;
+}
+
+.chartNav {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.button-chartNav {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.button-chartNav:hover,
+.button-chartNav:active,
+.button-chartNav.active {
+  background-color: #589fd6;
+  transform: translateY(2px);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.chart {
+  width: 100%;
+}
+
+.time {
+  color: white;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .chart {
+    width: 100vw;
+  }
+}
